@@ -30,4 +30,7 @@ def main():
         os.system(f'open -a "{selection}"')
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nExiting...")
